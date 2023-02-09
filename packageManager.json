@@ -1,4 +1,4 @@
-{
+#  {
   "packageName": "tankUtility",
   "author": "nh.schottfam",
   "minimumHEVersion": "2.1.9",
@@ -26,4 +26,4 @@
   "version": "1.0.5",
   "releaseNotes": "Latest release",
   "communityLink": "https://community.hubitat.com/t/tankutility-monitoring-app-and-device/8891"
-}
+#  

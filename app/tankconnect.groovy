@@ -1,43 +1,26 @@
-/**
- *
- * Modified heavily by EricS
- *  Based on ideas from Joshua Spain
- *
- *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
- *  in compliance with the License. You may obtain a copy of the License at:
- *
- *	http://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed
- *  on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License
- *  for the specific language governing permissions and limitations under the License.
- *
- *	February 4, 2023
- */
-//file:noinspection unused
-//file:noinspection GroovyUnusedAssignment
-
-import groovy.json.*
-import java.text.SimpleDateFormat
-import groovy.time.*
-import groovy.transform.Field
-
-definition(
-	name: "Tank Utility (Connect)",
-	namespace: "imnotbob",
-	author: "Eric S",
-	description: "Virtual device handler for Tank Utility Propane tank monitor",
-	category: "My Apps",
-	iconUrl: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience.png",
-	iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png",
-	iconX3Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png",
-	singleInstance: true,
-	oauth:true
-)
-
-static String appVersion() { "0.0.5" }
-
-preferences {
+#  /**
+#   * Modified heavily by EricS
+#   *
+#   *  in compliance with the License. You may obtain a copy of the License at:
+#   *	http://www.apache.org/licenses/LICENSE-2.0
+#   *  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed
+#   *  for the specific language governing permissions and limitations under the License.
+#   *	February 4, 2023
+#  //file:noinspection unused
+  
+#  import java.text.SimpleDateFormat
+#  import groovy.transform.Field
+#  name: "Tank Utility (Connect)",
+#  author: "Eric S",
+#  category: "My Apps",
+#  iconUrl: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience.png",
+#  iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png",
+#  iconX3Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png",
+#  singleInstance
+#  : true,
+#  )
+#  static String appVersion() { "0.0.5" }
+#  preferences {
 	page(name: "settings", title: "Settings", content: "settingsPage", install:true)
 }
 
